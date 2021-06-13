@@ -1,15 +1,15 @@
 # <h1 align="center">👩🏻‍💻 Html/Css/Js Projects 👩🏻‍💻</h1>
 
-> _🔧 This repository is meant to keep my web projects with basic technologies only, so I can follow up my own pŕogress through time without getting my github profile polluted. 📈 Hope this can also be useful to someone else_
+> _🔧 Following up my own progress through time without getting my github profile polluted. Hope this can also be useful to someone else 📈 _
 
 ## :pushpin: About
 
 <p align="justify">
-It's mostly a list with some projects that I liked and kept the code during my progression through self learning how to program. None of them was built from any tutorial, they're all my original ones. Here you can see the source code and the deployed versions.
+This repository is mostly a list with some projects that I liked and kept the code during my progression through self learning how to program. They're all my original ones. CRUD, API integration, css animations and other basic aspects of frontend web development can be seen here. Keeping my projects with basic web technologies only.
 </p>
 
 <p align="justify">
-The list below has the title, a brief description + link to their respective branch, a gif and link to the preview of every single one of them. Also, you can nav through this respository branchs.
+The list below has each project's title, a brief description + link to their respective branch, a short gif and link to the preview of every single one of them. Also, you can nav through this respository branchs to see more.
 </p>
 
 
@@ -26,3 +26,15 @@ Landing page built with ES6+, scss styles and github's API intergation, Node.js 
 
 - [See code](https://github.com/marianasmmattos/html-css-js-projects/tree/qc-challenge)
 - [See online preview](https://qc-challenge.herokuapp.com/)
+
+### ✨ Estacao Filmes
+<div align="center">
+<img src="https://user-images.githubusercontent.com/66320795/121816701-7e678f00-cc53-11eb-97d1-418ebc166f3e.gif" height="300px" alt="imagem da versão web">
+</div>
+<br>
+<p align="justify">
+Site where you can search and save your favorite movies. Using localstorage memory, TMDB's API and built from figma to deploy in a group project where we could teach each other. No frameworks involved, html/css/js only. Portuguese description and content.
+</p>
+
+- [See code](https://github.com/marianasmmattos/html-css-js-projects/tree/estacao-filmes)
+- [See online preview](https://estacao-filmes.netlify.app/)
