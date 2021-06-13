@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+
+      <title>FormMix</title>
+      <meta name="author" content="Mariana Mattos">
+      <meta name="copyright" content="© Mariana Mattos" />
+      <meta name="description" content="Treinamento em HTMl5/CSS3/JS Vanilla. Funções de darkmode, animações e validação de formulários sem uso de bibliotecas." />
+      <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+
+      <link rel="stylesheet" href="styles/style.css">
+      
+    </head>
+
+    <body>
+  
+      <label for="darkmode2" id="darkmode2">
+        <input type="checkbox" id="darkmode2" >
+        <span></span>
+      </label>
+  
+      <div class="main">
+
+        <form action="">
+          <label for="darkmode" id="darkmode">
+            <input type="checkbox" id="darkmode" >
+            <span></span>
+          </label>
+      
+          <h2>Entrar na lista</h2>
+
+          <div class="input">
+            <input required type="text" class="data" />
+            <label>Nome
+              <span class="error"></span>
+            </label>
+          </div>
+
+          <div class="input">
+            <input required type="email" class="data" />
+            <label>Email
+              <span class="error"></span>
+            </label>
+          </div>
+
+          <button id="send">Enviar</button>
+  
+        </form>
+      </div>
+
+      <ul class="quadrados"></ul>
+
+      <div class="bg-modal" id="modal">
+        <div class="modal">
+          <span id="spanmodal">X</span>
+          <p>Obrigada pela participação!</p>
+        </div>
+      </div>
+  
+      <script src="scripts/script.js"></script>
+
+    </body>
+  </html>

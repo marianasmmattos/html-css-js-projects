@@ -1,0 +1,23 @@
+{
+  "name": "bootcamp-fullstack",
+  "version": "1.0.0",
+  "description": "Projetos do modulo 1 do bootcamp fullstack fornecido pelo igti",
+  "main": "index.html",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianasmmattos/crud-and-basics.git"
+  },
+  "author": "Mariana Mattos",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
