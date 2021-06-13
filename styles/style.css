@@ -1,0 +1,124 @@
+@import './form.css';
+@import './modal.css';
+@import './animations.css';
+@import './responsivity.css';
+
+:root {
+    --primary-color:#191970b6;
+    --bg-color: #9dd2da;
+    --text-color: #f8f0f5;
+    --light-color: rgba(255, 255, 255, 8.04);
+    --form-bg:  #6c7b8b46;
+    --quad: #63acac49;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.main {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label#darkmode {
+    align-self: baseline;
+
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 25px;
+    height: 17px;
+    background: rgba(128, 128, 128, 0.363);
+    float: right;
+    border-radius: 100px;
+    position: relative;
+
+    z-index: 4;
+}
+
+label#darkmode2 {
+    cursor: pointer;
+    width: 25px;
+    float: right;
+    margin: 10px;
+    height: 17px;
+    background: rgba(128, 128, 128, 0.363);
+    border-radius: 100px;
+    position: relative;
+
+    z-index: 4;
+}
+
+input[type=checkbox] {
+    background: rgba(128, 128, 128, 0.712);
+    position: relative; 
+    cursor: pointer;
+    opacity: 0.01;
+    width: 25px;
+    height: 17px;
+    z-index: 3;
+}
+
+label#darkmode span::after,
+label#darkmode2 span::after{
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    top:5px;
+    right: 16px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 90px;
+    transition: .3s;
+}
+
+#darkmode > input[type=checkbox]:checked + span::after,
+#darkmode2 > input[type=checkbox]:checked + span::after {
+    right: 1px;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    z-index: 4;
+
+    color: rgba(255, 255, 255, 0.6) ;
+    transition: .4s;
+}
+
+body {
+    overflow: hidden;
+}
+
+.quadrados li {
+    width: 35px;
+    height: 35px;
+    background-color: var(--quad);
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    animation: up infinite;
+    animation-direction: alternate;
+
+    z-index: 1;
+}

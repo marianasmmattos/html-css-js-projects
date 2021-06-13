@@ -1,0 +1,50 @@
+@keyframes up {
+    from {
+        transform: translateY(0);
+    } to {
+        opacity: 0;
+        transform: translateY(-1000px) rotate(960deg);
+    }
+}
+
+@keyframes down {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateX(-70%);
+    }to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }to {
+        opacity: 1;
+    }
+}
+
+@keyframes treme {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-5%);
+    }    
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(5%);
+    }    
+}

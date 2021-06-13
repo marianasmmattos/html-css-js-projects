@@ -1,0 +1,117 @@
+form {
+    animation-name: fade;
+    animation-duration: 5s;
+
+    width: 90%;
+    height: 70%;
+    min-height: 500px;
+    max-width: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 32px auto;
+    padding: 32px 64px;
+    position: relative;
+    flex-direction: column;
+    border-radius: 8px;
+
+    z-index: 2;
+
+    background: var(--form-bg);
+}
+
+form h2 {
+    align-self: center;
+    margin-bottom: 40px;
+
+    font-size: 40px;
+    font-family: 'Lobster', sans-serif;
+}
+
+div.input {
+    width: 80%;
+    
+    margin-bottom: 5px;
+    position: relative;
+
+    animation-name: move;
+    animation-duration: 3s;
+}
+
+input.data,
+button#send {
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 20px;
+    border:none;
+    border-bottom: 1px solid var(--primary-color);
+
+    outline: none;
+    color: var(--text-color);
+    font-size: 1em;
+
+    background-color: transparent;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+
+}
+
+button#send {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-delay: 200ms; 
+    animation-fill-mode: backwards;
+
+    align-self: center;
+    margin-top: 26px;
+    max-width: 150px;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+span.error {
+    margin-left: 40px;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 10px;
+
+    max-width: 300px;
+    margin-top: 5px;
+
+    z-index: 3;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+.form-hide {
+    animation-name: down ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out; 
+}
+
+.validate-error {
+    animation: treme 70ms linear, fade paused;
+    animation-iteration-count: 5;
+}
