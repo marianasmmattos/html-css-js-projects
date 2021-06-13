@@ -45,8 +45,8 @@ Site where you can search and save your favorite movies. Using localstorage memo
 </div>
 <br>
 <p align="justify">
-Basic subscription form with field validation, css + js animations, component dark-theme and feedback modal. No libraries or frameworks. Portuguese description and content.
+Basic subscription form with field validation, css + js animations, component's dark-theme and feedback modal. Responsive, no libraries or frameworks involved. Portuguese description and content.
 </p>
 
-- [See code](https://github.com/marianasmmattos/html-css-js-projects/tree/estacao-filmes)
+- [See code](https://github.com/marianasmmattos/html-css-js-projects/tree/form-mix)
 - [See online preview](https://form-mix.netlify.app/)
