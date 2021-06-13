@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css"> 
+    <title>Módulo 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fondamento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="content" style="background-color: transparent;">
+    <div id="igti" style="transform:translateY(50vh);">
+        <div id="intro"> 
+            <h1 class="text">Desenvolvimento FullStack</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><h2 id="text">Módulo 01</h2>
+                    <ul id="op">
+                        <li class="li"><button class="rt">Regra de três</button></li>
+                        <li class="li"><button class="coresrgb">Cores RGB</button></li>
+                        <li class="li"><button class="crud">Lista CRUD</button></li>
+                        <li class="li"><button class="crudAPI">CRUD com API</button></li>
+                        <li class="li"><button class="APIpodcast">API radio-podcast</button></li>
+                        <li class="li"><button class="megasena">Megasena</button></li>
+                    </ul>
+                 </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="regradetres" style="transform:translateY(100vh);">
+        <h1>Regra de Três Simples</h1>
+        <br/>
+        <label id="inversa"><input type="checkbox" id="inverso">Inversamente proporcional</label>
+        <br/>
+        <div id="intvalue">
+            <section>
+                <label>Primeiro valor</label>
+                <input type="text" id="valueone">
+            </section>
+            <section>
+                <label>Segundo valor</label>
+                <input type="text" id="valuetwo">
+            </section>
+            <section>
+                 <label>Terceiro valor</label>
+                <input type="text" id="valuethree">
+            </section>
+            <section>
+                <label>Valor a ser descoberto</label>
+                <input id="valuefour" disabled>
+            </section>
+        </div>
+        <br/>
+        <button id="send">Resultado</button>
+    </div>
+
+    <div id="cadastro" style="transform:translateY(100vh);">
+        <h1>Cadastro de nomes</h1>
+        <br/>
+        <form>
+            <label>Nome:</label>
+            <input type="text" id="inputName" placeholder="Nos informe seu nome!" />
+        </form>
+        <br/>
+        <h2>Nomes cadastrados até o momento</h2>
+        <br/>
+        <div id="names"></div>
+    </div>
+
+    <div id="wichrgb" style="transform:translateY(100vh);">
+        <button class="rgbGerator"><h2 id="rgbGerator">Gerador de RGB</h2></button>
+        <button class="rgbBGchange"><h2 id="rgbBGchange">RGB no background</h2></button>
+    </div>
+
+    <div id="rgbBG" style="transform:translateY(100vh);">
+        <h1>Mude o plano de fundo<span></span></h1>
+        <div class="rgb1" id="rgb1">
+            <label>red:</label>
+            <input type="range" class="rgb" id="r1" value="255" min="0" max="255">
+            <label>green:</label>
+            <input type="range" class="rgb" id="g1"  value="222" min="0" max="255">
+            <label>blue:</label>
+            <input type="range" class="rgb" id="b1" value="207" min="0" max="255">
+        </div>
+        <div class="rgb2" id="rgb2">
+            <label>red:</label>
+            <input type="range" class="rgb" id="r2" value="186" min="0" max="255">
+            <label>green:</label>
+            <input type="range" class="rgb"  id="g2" value="121" min="0" max="255">
+            <label>blue:</label>
+            <input type="range" class="rgb" id="b2" value="103" min="0" max="255">
+        </div>
+        <div class="rgb3" id="rgb3">
+            <label>red:</label>
+            <input type="range" class="rgb" id="r3" value="94" min="0" max="255">
+            <label>green:</label>
+            <input type="range" class="rgb" id="g3" value="111" min="0" max="255">
+            <label>blue:</label>
+            <input type="range" class="rgb3" id="b3" value="100" min="0" max="255">
+        </div>
+        <div class="rgb3" id="rgb4">
+            <label>red:</label>
+            <input type="range" class="rgb" id="r4" value="63" min="0" max="255">
+            <label>green:</label>
+            <input type="range" class="rgb" id="g4" value="68" min="0" max="255">
+            <label>blue:</label>
+            <input type="range" class="rgb" id="b4" value="65" min="0" max="255">
+        </div>
+        <div id="rgbinputbg" class="rgbinputbg">
+            <div class="rgblab">
+                <input type="text" id="rgbin1" disabled>
+                <label id="rgblab1"></label>
+            </div>
+            <div class="rgblab">
+                <input type="text" id="rgbin2" disabled>
+                <label id="rgblab2"></label>
+            </div>
+            <div class="rgblab">
+                <input type="text" id="rgbin3" disabled>
+                <label id="rgblab3"></label>
+            </div>
+            <div class="rgblab">
+                 <input type="text" id="rgbin4" disabled>
+                <label id="rgblab4"></label>
+            </div>
+            <button id="random">Random</button>
+        </div>
+    </div>     
+    
+    <div id="rgb" style="transform:translateY(100vh);">
+        <h1>Gerador de RGB<span></span></h1>
+        <label>red:</label>
+        <input type="range" id="rangeRed" value="0" min="0" max="255">
+        <label>green:</label>
+        <input type="range" id="rangeGreen" value="0" min="0" max="255">
+        <label>blue:</label>
+        <input type="range" id="rangeBlue" value="0" min="0" max="255">
+        <div id="rgbinput">
+          <label id="rgbinputlabel"></label>
+        </div>
+    </div>
+
+    <div id="crudAPI1" style="transform:translateY(100vh);">
+        <h2>Seus países favoritos</h2>
+        <div class="countrycontainer">
+            <div class="countryList">
+                <h5>Países (<span id="countCountries"></span>)</h5>
+                <h6>População total: <span id="totalPopulationList"></span></h6>
+                <div id="scroll"><div id="tabcountries"></div></div>
+            </div>
+            <div class="countryFavs">
+                <h5>Favoritos (<span id="countFavs"></span>)</h5>
+                <h6>População total: <span id="totalFavs"></span></h6>
+                <div id="scroll"><div id="tabFavs"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="radiopodcast" style="transform:translateY(100vh);">
+        <h1>Radio Podcast</h1>
+        <div>
+            <input disabled id="freq" type="text">
+        </div>
+        <div>
+            <input type="range" id="rangeFreq" value="87.5" min="87.5" step="0.1" max="108">
+        </div>
+        <div id="podcast">
+            <p>Nenhum podcast encontrado</p>
+        </div>
+    </div>
+
+    <div id="megasena">
+    </div>
+</div>
+    <script defer src="podcasts.js"></script>   
+    <script defer src="scripts.js"></script>   
+</body>
+</html>
