@@ -5,7 +5,7 @@
 <img src="https://i.ibb.co/nBnYGSZ/mysite.png" height="300px" alt="imagem da versão web"><img src="https://i.ibb.co/8MnpLYJ/mobile.png" height="300px" alt="Imagem da versão mobile">
 </div>
 <br>
-Este projeto foi desenvolvido para candidatura à vaga de desenvolvedor FrontEnd da Qcx. A SPA deveria ser feita sem utilização de frameworks FrontEnd e preferencialmente componentizando a aplicação. Não foi requisitado backend. Realizado em 7 dias, você pode checar o resultado em minha prévia online, deploy feito pelo Heroku devido a utilização de servidor para levantar a aplicação em NodeJS https://qcxconc.herokuapp.com/
+Este projeto foi desenvolvido para candidatura à vaga de desenvolvedor FrontEnd da Qcx. A SPA deveria ser feita sem utilização de frameworks FrontEnd e preferencialmente componentizando a aplicação. Não foi requisitado backend. Realizado em 7 dias, você pode checar o resultado em minha prévia online, deploy feito pelo Heroku devido a utilização de servidor para levantar a aplicação em NodeJS https://qc-challenge.herokuapp.com/
 
 ## :sparkles: Lighthouse e prioridades durante o desevolvimento
 <div align="center">
